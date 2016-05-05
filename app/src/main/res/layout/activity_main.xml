@@ -1,0 +1,78 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin" tools:context=".MainActivity"
+    android:background="@drawable/bg_news1">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="News Sammarization"
+        android:gravity="center|center_vertical"
+        android:id="@+id/textView"
+        android:layout_centerHorizontal="true"
+        android:textColor="#b70688"
+        android:textSize="30dp"
+        android:layout_marginTop="20dp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:id="@+id/editTextUsername"
+        android:gravity="center|center_vertical"
+        android:hint="Username"
+        android:textSize="20dp"
+        android:focusable="true"
+        android:textColorHighlight="#ff7eff15"
+        android:textColorHint="#ffff25e6"
+        android:background="#fff"
+        android:layout_above="@+id/editTextPassword"
+        android:layout_alignParentStart="true"
+        android:layout_alignEnd="@+id/editTextPassword"
+        android:textStyle="italic" />
+
+
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:inputType="textPassword"
+        android:ems="10"
+        android:id="@+id/editTextPassword"
+        android:textColorHint="#ffff299f"
+        android:hint="Password"
+        android:gravity="center|center_vertical"
+        android:textSize="20dp"
+        android:layout_above="@+id/btnLogin"
+        android:layout_alignParentStart="true"
+        android:background="#fff"
+        android:layout_marginTop="20dp"
+        android:textStyle="italic" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="Login"
+        android:gravity="center|center_vertical"
+        android:id="@+id/btnLogin"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignEnd="@+id/editTextPassword"
+        android:background="@drawable/button4"
+        android:textStyle="bold"
+
+        android:layout_marginTop="20dp"
+        android:textSize="20dp" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:id="@+id/button"
+        android:layout_below="@+id/textView"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/news" />
+
+</RelativeLayout>

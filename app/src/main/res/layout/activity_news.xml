@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_news1">
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/editText"
+        android:layout_alignParentEnd="true"
+        android:background="#fff" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:gravity="center"
+        android:id="@+id/editTextTitle"
+        android:background="#fff"
+        android:layout_marginLeft="100dp"
+        android:layout_marginRight="10dp"
+        android:textSize="20dp"
+        android:layout_alignTop="@+id/textView3"
+        android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:gravity="center"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="ADD NEWS"
+        android:id="@+id/textView2"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:textSize="30dp"
+        android:background="#0630ae" />
+
+    <TextView
+        android:layout_width="80dp"
+        android:gravity="left"
+        android:layout_height="40dp"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Tille : "
+        android:id="@+id/textView3"
+        android:layout_marginTop="25dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_below="@+id/textView2"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="90dp"
+        android:gravity="left"
+        android:layout_height="30dp"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Category : "
+        android:id="@+id/textView4"
+        android:layout_marginRight="10dp"
+        android:layout_below="@+id/textView3"
+        android:layout_alignStart="@+id/textView3"
+        android:layout_marginTop="2dp" />
+
+    <Spinner
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:gravity="center"
+        android:id="@+id/cmbCategory"
+        android:background="#fff"
+        android:textSize="20dp"
+        android:layout_alignTop="@+id/textView4"
+        android:layout_alignStart="@+id/editTextTitle"
+        android:layout_marginRight="10dp" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="Save"
+        android:gravity="center|center_vertical"
+        android:id="@+id/btnSave"
+        android:background="@drawable/button1"
+        android:textStyle="bold"
+        android:textSize="20dp"
+        android:layout_above="@+id/btnExit"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="Exit"
+        android:gravity="center|center_vertical"
+        android:id="@+id/btnExit"
+        android:background="@drawable/button2"
+        android:textStyle="bold"
+        android:textSize="20dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:gravity="center"
+        android:enabled="false"
+        android:hint="Text File"
+        android:id="@+id/txtTextFile"
+        android:background="#fff"
+        android:layout_marginRight="10dp"
+        android:textSize="20dp"
+        android:layout_below="@+id/textView4"
+        android:layout_alignStart="@+id/textView4"
+        android:layout_marginTop="10dp" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Browse file"
+        android:id="@+id/btnUoloadTextFile"
+        android:layout_below="@+id/txtTextFile"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="0dp" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:gravity="center"
+        android:id="@+id/txtZipFile"
+        android:background="#fff"
+        android:layout_marginRight="10dp"
+        android:textSize="20dp"
+        android:enabled="false"
+        android:hint="Zip File"
+        android:layout_marginTop="2dp"
+        android:layout_below="@+id/btnUoloadTextFile"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="10dp" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Browse file"
+        android:id="@+id/btnUploadZipFile"
+        android:layout_below="@+id/txtZipFile"
+        android:layout_centerHorizontal="true"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="0dp" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:gravity="center"
+        android:id="@+id/txtImage"
+        android:background="#fff"
+        android:layout_marginRight="10dp"
+        android:textSize="20dp"
+        android:hint="Image File"
+        android:enabled="false"
+        android:layout_marginLeft="10dp"
+        android:layout_below="@+id/btnUploadZipFile"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Browse file"
+        android:id="@+id/btnUploadImage"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_below="@+id/txtImage"
+        android:layout_centerHorizontal="true" />
+
+</RelativeLayout>

@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">NEWS SUMMARIZATION</string>
+    <string name="app_name">News Summarization</string>
     <string name="url_network">http://192.168.56.1/newssummarization/admin/api/</string>
     <string name="url_localhost">http://10.0.3.2/newssummarization/admin/api/</string>
     <string name="url_web">http://www.newssummarization.com/admin/api/</string>
